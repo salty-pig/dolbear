@@ -15,5 +15,9 @@
   "author": "Lucas Holmquist",
   "engines": {
     "node": "^20 || ^18 || ^16"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/salty-pig/dolbear/issues"
+  },
+  "homepage": "https://github.com/salty-pig/dolbear#readme"
 }
