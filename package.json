@@ -1,0 +1,19 @@
+{
+  "name": "dolbear",
+  "version": "1.0.0",
+  "description": "Formula for Dolbear's Law.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+    "files": [
+    "index.js"
+  ],
+  "license": "Apache-2.0",
+  "type": "commonjs",
+  "keywords": ["dolbear", "crickets", "temperature"],
+  "author": "Lucas Holmquist",
+  "engines": {
+    "node": "^20 || ^18 || ^16"
+  }
+}
