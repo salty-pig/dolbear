@@ -1,7 +1,14 @@
 'use strict';
 
-function dolbearTemp (numberOfCricketsPer15Seconds) {
+function dolbearTempFahrenheit (numberOfCricketsPer15Seconds) {
   return numberOfCricketsPer15Seconds + 40;
 }
 
-module.exports = dolbearTemp;
+function dolbearTempCelcius (numberOfCricketsPer8Seconds) {
+  return numberOfCricketsPer8Seconds + 5;
+}
+
+module.exports = {
+  Fahrenheit: dolbearTempFahrenheit,
+  Celcius: dolbearTempCelcius
+};
