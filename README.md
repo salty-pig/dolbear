@@ -17,13 +17,13 @@ const temperature = dolbear.Fahrenheit(numberOfCricketChirpsPer15Seconds);
 console.log(temperature); // 45
 ```
 
-For the temperature in Celcius:
+For the temperature in Celsius:
 
 ```
 const dolbear = require('dolbear');
 
 const numberOfCricketChirpsPer8Seconds = 5;
-const temperature = dolbear.Celcius(numberOfCricketChirpsPer8Seconds);
+const temperature = dolbear.Celsius(numberOfCricketChirpsPer8Seconds);
 
 console.log(temperature); // 10
 ```

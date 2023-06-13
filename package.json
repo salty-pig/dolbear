@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "description": "Formula for Dolbear's Law.",
   "main": "index.js",
+"bin": "./bin/cli.js",
   "scripts": {
     "test": "node test/test.js"
   },
-    "files": [
+  "files": [
     "index.js"
   ],
   "license": "Apache-2.0",
   "type": "commonjs",
-  "keywords": ["dolbear", "crickets", "temperature"],
+  "keywords": [
+    "dolbear",
+    "crickets",
+    "temperature"
+  ],
   "author": "Lucas Holmquist",
   "engines": {
     "node": "^20 || ^18 || ^16"
@@ -19,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/salty-pig/dolbear/issues"
   },
-  "homepage": "https://github.com/salty-pig/dolbear#readme"
+  "homepage": "https://github.com/salty-pig/dolbear#readme",
+  "dependencies": {
+    "commander": "^10.0.1"
+  }
 }
