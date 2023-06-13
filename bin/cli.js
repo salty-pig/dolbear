@@ -30,6 +30,6 @@ function run(chirps) {
 }
 
 function print(temp, scale) {
-  let scaleName = scale == 'c' ? 'Celcius' : 'Fahrenheit';
+  let scaleName = scale == 'c' ? 'Celsius' : 'Fahrenheit';
   console.log(`The estimated temperature based on your input is ${temp}° ${scaleName}.`);
 }

@@ -11,8 +11,8 @@ test('testing Dolbears law - Fahrenheit', (t) => {
   assert.deepStrictEqual(dolbear.Fahrenheit(cricketChirpsIn15Seconds), 45, 'Should be equal');
 });
 
-test('testing Dolbears law - Celcius', (t) => {
+test('testing Dolbears law - Celsius', (t) => {
   const cricketChirpsIn8Seconds = 5;
 
-  assert.deepStrictEqual(dolbear.Celcius(cricketChirpsIn8Seconds), 10, 'Should be equal');
+  assert.deepStrictEqual(dolbear.Celsius(cricketChirpsIn8Seconds), 10, 'Should be equal');
 });
