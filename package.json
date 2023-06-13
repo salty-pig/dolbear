@@ -6,12 +6,16 @@
   "scripts": {
     "test": "node test/test.js"
   },
-    "files": [
+  "files": [
     "index.js"
   ],
   "license": "Apache-2.0",
   "type": "commonjs",
-  "keywords": ["dolbear", "crickets", "temperature"],
+  "keywords": [
+    "dolbear",
+    "crickets",
+    "temperature"
+  ],
   "author": "Lucas Holmquist",
   "engines": {
     "node": "^20 || ^18 || ^16"
