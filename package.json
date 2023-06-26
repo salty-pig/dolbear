@@ -25,6 +25,10 @@
   "bugs": {
     "url": "https://github.com/salty-pig/dolbear/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "salty-pig/dolbear.git"
+  },
   "homepage": "https://github.com/salty-pig/dolbear#readme",
   "dependencies": {
     "commander": "^10.0.1"
