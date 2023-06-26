@@ -6,8 +6,6 @@ name: release-please
 jobs:
   release-please:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
     steps:
       - uses: GoogleCloudPlatform/release-please-action@v3
         id: release
@@ -27,7 +25,7 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
       - run: npm test
         if: ${{ steps.release.outputs.release_created }}
-      - run: npm publish --provenance
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.DOLBEAR_PUBLISH}}
         if: ${{ steps.release.outputs.release_created }}
