@@ -6,6 +6,8 @@ name: release-please
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
     steps:
       - uses: GoogleCloudPlatform/release-please-action@v3
         id: release
@@ -18,14 +20,14 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
           registry-url: 'https://registry.npmjs.org'
         if: ${{ steps.release.outputs.release_created }}
       - run: npm ci
         if: ${{ steps.release.outputs.release_created }}
       - run: npm test
         if: ${{ steps.release.outputs.release_created }}
-      - run: npm publish
+      - run: npm publish --provenance
         env:
           NODE_AUTH_TOKEN: ${{secrets.DOLBEAR_PUBLISH}}
         if: ${{ steps.release.outputs.release_created }}
