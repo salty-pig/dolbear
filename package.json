@@ -1,6 +1,6 @@
 {
   "name": "dolbear",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Formula for Dolbear's Law.",
   "main": "index.js",
   "bin": "./bin/cli.js",
